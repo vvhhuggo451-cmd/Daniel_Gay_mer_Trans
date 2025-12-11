@@ -8,10 +8,9 @@ body {
   font-family: "Cabin", sans-serif;
   color: #8B4513;
 }
-/* -------- cabeçalho -------- */
-/* ======= CABEÇALHO ======= */
+
 header {
-  background-color: #f2b705; /* amarelo tradicional */
+  background-color: #f2b705; 
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   position: sticky;
   top: 0;
@@ -20,7 +19,7 @@ header {
   font-family: "Segoe UI", Arial, sans-serif;
 }
 
-/* ======= NAVEGAÇÃO ======= */
+
 .nav {
   display: flex;
   justify-content: space-between;
@@ -31,7 +30,7 @@ header {
   padding: 15px 0;
 }
 
-/* ======= LOGO ======= */
+
 .logo {
   font-size: 1.6em;
   font-weight: bold;
@@ -49,7 +48,6 @@ header {
   color: #8a4500;
 }
 
-/* ======= MENU ======= */
 .nav ul {
   list-style: none;
   display: flex;
@@ -72,25 +70,24 @@ header {
   transform: scale(1.05);
 }
 
-/* -------- BANNER -------- */
+
 .banner {
-  width: 90%;               /* 5% de espaçamento em cada lado */
-  max-width: 1200px;        /* evita ficar muito largo */
+  width: 90%;              
+  max-width: 1200px;        
   height: 300px;
-  margin: 40px auto;        /* centraliza e cria espaçamento do topo */
-  border-radius: 10px;      /* bordas arredondadas */
-  overflow: hidden;         /* corta o que passar das bordas */
+  margin: 40px auto;        
+  border-radius: 10px;     
+  overflow: hidden;         
 }
 
 .banner img {
   width: 100%;
   height: 100%;
-  object-fit: cover;        /* mantém proporção sem distorcer */
+  object-fit: cover;       
   display: block;
 }
 
-/* -------- CARD -------- */
-/* ======= CONTAINER PRINCIPAL ======= */
+
 body {
   font-family: "Segoe UI", Arial, sans-serif;
   background-color: #fafafa;
@@ -99,7 +96,6 @@ body {
   padding: 0;
 }
 
-/* ======= CARD PRINCIPAL ======= */
 .card,
 .card_origem {
   background-color: #fff;
@@ -112,14 +108,12 @@ body {
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-/* EFEITO AO PASSAR O MOUSE */
 .card:hover,
 .card_origem:hover {
   transform: translateY(-5px);
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
 }
 
-/* ======= TÍTULOS ======= */
 .card h1,
 .card_origem h1 {
   color: #6b2b00;
@@ -129,7 +123,6 @@ body {
   letter-spacing: 1px;
 }
 
-/* ======= PARÁGRAFOS ======= */
 .card p,
 .card_origem p {
   color: #5a2b00;
@@ -138,7 +131,6 @@ body {
   margin-bottom: 15px;
 }
 
-/* ======= SEÇÃO INFORMAÇÕES ======= */
 .informacao {
   display: flex;
   justify-content: center;
@@ -149,9 +141,8 @@ body {
   max-width: 1000px;
 }
 
-/* ======= CARTÕES DE INFORMAÇÃO ======= */
 .cartao {
-  background-color: #f2b705; /* amarelo característico */
+  background-color: #f2b705;
   color: #5a2b00;
   font-weight: bold;
   border-radius: 8px;
@@ -163,8 +154,24 @@ body {
   min-width: 230px;
 }
 
-/* EFEITO HOVER DOS CARTÕES */
+
 .cartao:hover {
   transform: translateY(-4px);
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+}
+
+.mapBox {
+  width: 90%;
+  max-width: 1000px;
+  margin: 40px auto;             
+  border-radius: 12px;
+  overflow: hidden;              
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2); 
+}
+
+.mapBox iframe {
+  width: 100%;
+  height: 420px;
+  border: none;
+  display: block;
 }
