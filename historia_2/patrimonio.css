@@ -8,9 +8,9 @@ body {
   font-family: "Cabin", sans-serif;
   color: #8B4513;
 }
-/* -------- cabeçalho -------- */
+
 header {
-  background-color: #f2b705; /* amarelo característico */
+  background-color: #f2b705; 
   padding: 15px 0;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   position: sticky;
@@ -18,7 +18,7 @@ header {
   z-index: 100;
 }
 
-/* ======= BARRA DE NAVEGAÇÃO ======= */
+
 .nav {
   display: flex;
   justify-content: space-between;
@@ -28,21 +28,20 @@ header {
   margin: 0 auto;
 }
 
-/* ======= LOGO / TÍTULO ======= */
 .logo {
   font-size: 1.6em;
   font-weight: bold;
-  color: #5a2b00; /* marrom escuro */
+  color: #5a2b00; 
   text-transform: uppercase;
   letter-spacing: 1px;
   transition: color 0.3s ease;
 }
 
 .logo:hover {
-  color: #8a4500; /* marrom mais escuro ao passar o mouse */
+  color: #8a4500; 
 }
 
-/* ======= MENU ======= */
+
 .nav ul {
   list-style: none;
   display: flex;
@@ -59,7 +58,7 @@ header {
   transition: color 0.3s ease;
 }
 
-/* Links */
+
 .nav a {
   text-decoration: none;
 }
@@ -67,8 +66,7 @@ header {
 .nav a:hover li {
   color: #8a4500;
 }
-/* -------- card -------- */
-/* Container geral */
+
 .lista_patrimonio {
   display: flex;
   flex-direction: column;
@@ -79,7 +77,6 @@ header {
   max-width: 1200px;
 }
 
-/* Cada bloco de patrimônio */
 .lista_patrimonio > div {
   display: flex;
   align-items: flex-start;
@@ -92,13 +89,12 @@ header {
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-/* Efeito ao passar o mouse */
 .lista_patrimonio > div:hover {
   transform: translateY(-5px);
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
 }
 
-/* Imagens */
+
 .lista_patrimonio img {
   width: 230px;
   height: auto;
@@ -106,10 +102,10 @@ header {
   object-fit: cover;
 }
 
-/* Textos */
+
 .lista_patrimonio h1 {
   font-size: 1.8em;
-  color: #6b2b00; /* mesmo tom terroso */
+  color: #6b2b00; 
   margin-bottom: 10px;
   text-transform: capitalize;
 }
@@ -120,13 +116,11 @@ header {
   font-size: 1.05em;
 }
 
-/* Wrapper de texto */
 .lista_patrimonio div > h1,
 .lista_patrimonio div > p {
   flex: 1;
 }
 
-/* Container geral */
 .lista_patrimonio {
   display: flex;
   flex-direction: column;
@@ -137,7 +131,6 @@ header {
   max-width: 1200px;
 }
 
-/* Cada bloco de patrimônio */
 .lista_patrimonio > div {
   display: flex;
   align-items: flex-start;
@@ -150,13 +143,11 @@ header {
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-/* Efeito ao passar o mouse */
 .lista_patrimonio > div:hover {
   transform: translateY(-5px);
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
 }
 
-/* Imagens */
 .lista_patrimonio img {
   width: 230px;
   height: auto;
@@ -164,10 +155,9 @@ header {
   object-fit: cover;
 }
 
-/* Textos */
 .lista_patrimonio h1 {
   font-size: 1.8em;
-  color: #6b2b00; /* mesmo tom terroso */
+  color: #6b2b00; 
   margin-bottom: 10px;
   text-transform: capitalize;
 }
@@ -178,30 +168,8 @@ header {
   font-size: 1.05em;
 }
 
-/* Wrapper de texto */
 .lista_patrimonio div > h1,
 .lista_patrimonio div > p {
   flex: 1;
 }
 
-/* Responsividade */
-@media (max-width: 768px) {
-  .lista_patrimonio > div {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .lista_patrimonio img {
-    width: 100%;
-    max-width: 400px;
-    margin: 0 auto;
-  }
-
-  .lista_patrimonio h1 {
-    font-size: 1.5em;
-  }
-
-  .lista_patrimonio p {
-    font-size: 1em;
-  }
-}
