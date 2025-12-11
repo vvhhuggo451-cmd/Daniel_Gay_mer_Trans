@@ -9,10 +9,9 @@ body {
   color: #8B4513;
 }
 
-/* -------- cabeçalho -------- */
-/* ======= CABEÇALHO ======= */
+
 header {
-  background-color: #f2b705; /* amarelo tradicional */
+  background-color: #f2b705; 
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   position: sticky;
   top: 0;
@@ -20,7 +19,7 @@ header {
   z-index: 100;
 }
 
-/* ======= NAVEGAÇÃO ======= */
+
 .nav {
   display: flex;
   justify-content: space-between;
@@ -31,10 +30,10 @@ header {
   padding: 15px 0;
 }
 
-/* ======= LOGO ======= */
+
 .logo a {
   text-decoration: none;
-  color: #5a2b00; /* marrom escuro */
+  color: #5a2b00; 
   font-size: 1.6em;
   font-weight: bold;
   text-transform: uppercase;
@@ -43,10 +42,10 @@ header {
 }
 
 .logo a:hover {
-  color: #8a4500; /* marrom mais intenso no hover */
+  color: #8a4500;
 }
 
-/* ======= MENU ======= */
+
 .nav ul {
   list-style: none;
   display: flex;
@@ -69,8 +68,6 @@ header {
   transform: scale(1.05);
 }
 
-/* card com a lista e a imagem*/
-/* ======= CONTAINER GERAL ======= */
 section {
   width: 90%;
   max-width: 1200px;
@@ -81,7 +78,7 @@ section {
   font-family: "Segoe UI", Arial, sans-serif;
 }
 
-/* ======= CARD PADRÃO ======= */
+
 .lista_card,
 .lista_card2,
 .lista_card3 {
@@ -95,7 +92,7 @@ section {
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-/* EFEITO AO PASSAR O MOUSE */
+
 .lista_card:hover,
 .lista_card2:hover,
 .lista_card3:hover {
@@ -103,7 +100,7 @@ section {
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
 }
 
-/* ======= IMAGENS ======= */
+
 .lista_card img,
 .lista_card2 img,
 .lista_card3 img {
@@ -113,7 +110,7 @@ section {
   object-fit: cover;
 }
 
-/* ======= TÍTULOS ======= */
+
 .lista_card h1,
 .lista_card2 h1,
 .lista_card3 h1 {
@@ -123,7 +120,7 @@ section {
   text-transform: capitalize;
 }
 
-/* ======= LISTAS ======= */
+
 .lista_card ul,
 .lista_card2 ul,
 .lista_card3 ul {
@@ -133,6 +130,7 @@ section {
   font-size: 1.05em;
   line-height: 1.6;
   margin: 0;
+  flex-direction: column;
 }
 
 .lista_card li,
@@ -141,7 +139,6 @@ section {
   margin-bottom: 10px;
 }
 
-/* Remove marcadores duplicados nos h1 dentro de ul */
 .lista_card ul h1,
 .lista_card2 ul h1,
 .lista_card3 ul h1 {
