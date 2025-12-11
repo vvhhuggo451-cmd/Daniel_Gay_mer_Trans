@@ -1,0 +1,207 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: ghostwhite;
+  font-family: "Cabin", sans-serif;
+  color: #8B4513;
+}
+/* -------- cabeçalho -------- */
+header {
+  background-color: #f2b705; /* amarelo característico */
+  padding: 15px 0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+/* ======= BARRA DE NAVEGAÇÃO ======= */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ======= LOGO / TÍTULO ======= */
+.logo {
+  font-size: 1.6em;
+  font-weight: bold;
+  color: #5a2b00; /* marrom escuro */
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
+}
+
+.logo:hover {
+  color: #8a4500; /* marrom mais escuro ao passar o mouse */
+}
+
+/* ======= MENU ======= */
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav ul li {
+  color: #5a2b00;
+  font-weight: bold;
+  text-transform: capitalize;
+  font-size: 1.05em;
+  transition: color 0.3s ease;
+}
+
+/* Links */
+.nav a {
+  text-decoration: none;
+}
+
+.nav a:hover li {
+  color: #8a4500;
+}
+/* -------- card -------- */
+/* Container geral */
+.lista_patrimonio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  margin: 40px auto;
+  padding: 20px;
+  max-width: 1200px;
+}
+
+/* Cada bloco de patrimônio */
+.lista_patrimonio > div {
+  display: flex;
+  align-items: flex-start;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px 30px;
+  gap: 25px;
+  width: 100%;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Efeito ao passar o mouse */
+.lista_patrimonio > div:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Imagens */
+.lista_patrimonio img {
+  width: 230px;
+  height: auto;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+/* Textos */
+.lista_patrimonio h1 {
+  font-size: 1.8em;
+  color: #6b2b00; /* mesmo tom terroso */
+  margin-bottom: 10px;
+  text-transform: capitalize;
+}
+
+.lista_patrimonio p {
+  color: #5a2b00;
+  line-height: 1.6;
+  font-size: 1.05em;
+}
+
+/* Wrapper de texto */
+.lista_patrimonio div > h1,
+.lista_patrimonio div > p {
+  flex: 1;
+}
+
+/* Container geral */
+.lista_patrimonio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  margin: 40px auto;
+  padding: 20px;
+  max-width: 1200px;
+}
+
+/* Cada bloco de patrimônio */
+.lista_patrimonio > div {
+  display: flex;
+  align-items: flex-start;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px 30px;
+  gap: 25px;
+  width: 100%;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Efeito ao passar o mouse */
+.lista_patrimonio > div:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Imagens */
+.lista_patrimonio img {
+  width: 230px;
+  height: auto;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+/* Textos */
+.lista_patrimonio h1 {
+  font-size: 1.8em;
+  color: #6b2b00; /* mesmo tom terroso */
+  margin-bottom: 10px;
+  text-transform: capitalize;
+}
+
+.lista_patrimonio p {
+  color: #5a2b00;
+  line-height: 1.6;
+  font-size: 1.05em;
+}
+
+/* Wrapper de texto */
+.lista_patrimonio div > h1,
+.lista_patrimonio div > p {
+  flex: 1;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .lista_patrimonio > div {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .lista_patrimonio img {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .lista_patrimonio h1 {
+    font-size: 1.5em;
+  }
+
+  .lista_patrimonio p {
+    font-size: 1em;
+  }
+}

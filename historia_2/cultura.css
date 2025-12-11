@@ -1,0 +1,183 @@
+/* ======= RESET BÁSICO ======= */
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #fafafa;
+  color: #5a2b00;
+}
+
+/* ======= CABEÇALHO ======= */
+header {
+  background-color: #f2b705; /* amarelo suave */
+  padding: 15px 0;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #5a2b00;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.nav ul li {
+  color: #5a2b00;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.nav a {
+  text-decoration: none;
+}
+
+.nav a:hover li {
+  color: #8a4500;
+}
+
+/* ======= SEÇÃO PRINCIPAL ======= */
+section {
+  width: 90%;
+  max-width: 1200px;
+  margin: 40px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+
+/* ======= INTRODUÇÃO ======= */
+.introducao {
+  background-color: #fff;
+  padding: 25px 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.introducao h1 {
+  color: #6b2b00;
+  margin-bottom: 15px;
+  font-size: 2em;
+}
+
+.introducao p {
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+/* ======= BLOCOS DE CONTEÚDO ======= */
+.festas,
+.patrimonio,
+.artesanato,
+.comida,
+.musica,
+.museus {
+  display: flex;
+  align-items: flex-start;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px 30px;
+  gap: 25px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Efeito hover */
+.festas:hover,
+.patrimonio:hover,
+.artesanato:hover,
+.comida:hover,
+.musica:hover,
+.museus:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Imagens */
+.festas img,
+.patrimonio img,
+.artesanato img,
+.comida img,
+.musica img,
+.museus img {
+  width: 230px;
+  height: auto;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+/* Textos */
+.festas h2,
+.patrimonio h2,
+.artesanato h2,
+.comida h2,
+.musica h2,
+.museus h2 {
+  font-size: 1.6em;
+  color: #6b2b00;
+  margin-bottom: 10px;
+}
+
+.festas li,
+.patrimonio li,
+.artesanato li,
+.comida li,
+.musica li,
+.museus li {
+  font-size: 1.05em;
+  line-height: 1.6;
+  margin-bottom: 8px;
+}
+
+/* Remove marcador padrão */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* ======= RESPONSIVIDADE ======= */
+@media (max-width: 768px) {
+  .festas,
+  .patrimonio,
+  .artesanato,
+  .comida,
+  .musica,
+  .museus {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .festas img,
+  .patrimonio img,
+  .artesanato img,
+  .comida img,
+  .musica img,
+  .museus img {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .festas h2,
+  .patrimonio h2,
+  .artesanato h2,
+  .comida h2,
+  .musica h2,
+  .museus h2 {
+    font-size: 1.4em;
+  }
+}
